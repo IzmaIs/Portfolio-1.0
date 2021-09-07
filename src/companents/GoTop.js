@@ -27,7 +27,7 @@ export const GoTop = (props) => {
     }
     const renderGoTopIcon = () => {
         return (
-            <Button size="large" color="silver" className={`go-top ${thePosition ? 'active' : ''}`} onClick={scrollToTop}>{
+            <Button size="large" className={`go-top ${thePosition ? 'active' : ''}`} onClick={scrollToTop}>{
                 <ArrowUpwardIcon fontSize="large"/>}
             </Button>
         )

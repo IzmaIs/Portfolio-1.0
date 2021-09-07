@@ -9,7 +9,7 @@ export const About = () => {
             <Container style={{paddingTop: "9%"}}>
                 <Grid container spacing={5}>
                     {Blocks.map((block) =>
-                        <Grid item xs={12} sm={6} md={4} style={{position: block.position, top: "0"}} key={block}>
+                        <Grid item xs={12} sm={6} md={4} style={{position: block.position, top: "0"}} key={block.text}>
                             <Card style={{position: block.position, backgroundColor: block.backgroundColor, top: "0"}}>
                                 <CardMedia style={{paddingTop: "85%"}} image={block.url}/>
                                 <CardContent>

@@ -24,7 +24,7 @@ export default function SearchFilms({keyword, page}) {
                 <div align="center">
                     <p key={films}>Название на русском:{films.nameRu}</p>
                     <p key={films}>Название на английском:{films.nameEn}</p>
-                    <img key={films} src={films.posterUrl} width="400" height="400"/>
+                    <img key={films} src={films.posterUrl} width="400" height="400" alt="img"/>
                 </div>
             )}
         </div>

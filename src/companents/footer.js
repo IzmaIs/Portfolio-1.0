@@ -1,4 +1,4 @@
-import {BottomNavigation, BottomNavigationAction, Typography} from "@material-ui/core";
+import {BottomNavigation, BottomNavigationAction} from "@material-ui/core";
 import RestoreIcon from "@material-ui/icons/Restore";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import LocationOnIcon from "@material-ui/icons/LocationOn";

@@ -78,7 +78,7 @@ export const Home = () => {
                                     <Grid container justify="center">
                                         <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/about"
                                                  exact>
-                                            <Button variant="contained" color="silver" justify="center">
+                                            <Button variant="contained"  justify="center">
                                                 Карточки
                                             </Button>
                                         </NavLink>
@@ -103,12 +103,12 @@ export const Home = () => {
                             <Grid container spacing={3} justify="center">
                                 <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/Left" exact>
                                     <Grid item>
-                                        <Button variant="outlined" color="danger">Поиск фильмов</Button>
+                                        <Button variant="outlined">Поиск фильмов</Button>
                                     </Grid>
                                 </NavLink>
                                 <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/Right" exact>
                                     <Grid item>
-                                        <Button variant="outlined" color="#5bb17a">Right</Button>
+                                        <Button variant="outlined">Right</Button>
                                     </Grid>
                                 </NavLink>
                             </Grid>
@@ -134,10 +134,10 @@ export const Home = () => {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small" color="black">
+                                        <Button size="small">
                                             More
                                         </Button>
-                                        <Button size="small" color="black">
+                                        <Button size="small">
                                             Open
                                         </Button>
                                         <LayersIcon/>
