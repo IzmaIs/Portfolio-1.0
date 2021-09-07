@@ -66,7 +66,7 @@ export const Home = () => {
                        style={{backgroundImage: 'url(https://source.unsplash.com/random)'}}>
                     <Container fixed>
                         <div className={classes.overlay}/>
-                        <Grid container justifyContent="center">
+                        <Grid container style={{justifyContent:'center'}}>
                             <Grid item md={6}>
                                 <div className={classes.mainFeaturesPostContent}>
                                     <Typography align="center" component="h1" color="inherit" gutterBottom variant="h3">
@@ -75,10 +75,10 @@ export const Home = () => {
                                     <Typography component="h5" color="inherit" paragraph>
                                         Я
                                     </Typography>
-                                    <Grid container justify="center">
+                                    <Grid container style={{justifyContent:'center'}}>
                                         <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/about"
                                                  exact>
-                                            <Button variant="contained"  justify="center">
+                                            <Button variant="contained"  style={{justifyContent:'center'}}>
                                                 Карточки
                                             </Button>
                                         </NavLink>
@@ -100,7 +100,7 @@ export const Home = () => {
                             Занимаюсь разработкой и оформлением сайтов на React
                         </Typography>
                         <div className={classes.mainButtons}>
-                            <Grid container spacing={3} justify="center">
+                            <Grid container spacing={3} style={{justifyContent:'center'}}>
                                 <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/Left" exact>
                                     <Grid item>
                                         <Button variant="outlined">Поиск фильмов</Button>
