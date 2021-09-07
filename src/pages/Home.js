@@ -119,7 +119,7 @@ export const Home = () => {
                                         <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/about"
                                                  exact>
                                             <Button variant="contained" color="silver" justify="center">
-                                                learn more
+                                                Карточки
                                             </Button>
                                         </NavLink>
                                     </Grid>
@@ -143,7 +143,7 @@ export const Home = () => {
                             <Grid container spacing={3} justify="center">
                                 <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/Left" exact>
                                     <Grid item>
-                                        <Button variant="outlined" color="danger">Left</Button>
+                                        <Button variant="outlined" color="danger">Поиск фильмов</Button>
                                     </Grid>
                                 </NavLink>
                                 <NavLink style={{textDecoration: 'none'}} className="nav-link" to="/Right" exact>
