@@ -4,8 +4,9 @@ import {Container, Typography, Paper, Grid, Card, CardActions, CardMedia, CardCo
 import {makeStyles} from '@material-ui/core/styles';
 import LayersIcon from '@material-ui/icons/Layers';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import {NavLink} from "react-router-dom";
+import GoTop from "../companents/GoTop";
+import Box from '@material-ui/core/Box';
 
 
 export const Home = () => {
@@ -57,48 +58,7 @@ export const Home = () => {
     }))
     const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const classes = useStyles();
-    const GoTop = (props) => {
-        const [thePosition, setThePosition] = React.useState(false);
 
-        const timeoutRef = React.useRef(null);
-
-        React.useEffect(() => {
-            document.addEventListener("scroll", () => {
-                if (window.scrollY > 170) {
-                    setThePosition(true)
-                } else {
-                    setThePosition(false);
-                }
-            });
-            // window.scrollTo(0, 0);
-        }, [])
-
-        const onScrollStep = () => {
-
-            if (window.pageYOffset === 0) {
-                clearInterval(timeoutRef.current);
-            }
-            window.scroll(0, window.pageYOffset - props.scrollStepInPx);
-        }
-
-        const scrollToTop = () => {
-            timeoutRef.current = setInterval(onScrollStep, props.delayInMs);
-
-        }
-
-        const renderGoTopIcon = () => {
-            return (
-                <Button color="silver" className={`go-top ${thePosition ? 'active' : ''}`} onClick={scrollToTop}>{
-                    <ArrowUpwardIcon/>}
-                </Button>
-            )
-        }
-        return (
-            <Fragment>
-                {renderGoTopIcon()}
-            </Fragment>
-        )
-    }
     return (
         <Fragment>
             <main>
@@ -189,10 +149,9 @@ export const Home = () => {
                         ))}
                     </Grid>
                 </Container>
-                <Grid className={classes.But} container justifyContent="flex-end"
-                      alignItems="flex-end">
-                    <GoTop scrollStepInPx="50" delayInMs="10.50"/>
-                </Grid>
+                <Box textAlign='center'>
+                <GoTop scrollStepInPx="50" delayInMs="10.50"/>
+                </Box>
             </main>
         </Fragment>
     )
