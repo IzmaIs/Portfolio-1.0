@@ -1,3 +1,16 @@
+Первый опыт React, было использована сама библиотека и MateriaUI. Из крутого подключеный API Кинопоиска для поиска фильмов.
+
+
+
+# Демо: https://clck.ru/Yj4ba
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
